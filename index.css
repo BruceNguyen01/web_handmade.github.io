@@ -1,0 +1,247 @@
+.html {
+  display: block;
+}
+.wrapper {
+  margin: 0 120px 0 120px;
+}
+
+.input-group {
+  width: 500px;
+  border-radius: 0;
+}
+
+.header {
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart {
+  margin: 12px 0 12px 16px;
+}
+.fa-shopping-cart {
+  color: #b1d1c9;
+}
+.badge {
+  border-radius: 50%;
+  font-size: 9px;
+  margin-right: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-left: 22px;
+}
+
+.dropdown-item {
+  display: flex;
+}
+.dropdown-item-block {
+  display: flex;
+}
+
+.flag {
+  width: 20px;
+  height: 15px;
+  margin: 10px 0 10px 10px;
+}
+
+.flag-box {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.header_left-text {
+  margin: 18px;
+}
+
+.text-bot {
+  margin: -12px;
+}
+.text-top {
+  margin-top: -20px;
+}
+.social {
+  margin-top: 18px;
+}
+.fab {
+  margin: 10px;
+  color: #b1d1c9;
+}
+.fab:hover {
+  color: dimgray;
+}
+.fa-phone {
+  color: #b1d1c9;
+}
+
+.nav-link:hover {
+  color: #b1d1c9;
+}
+.nav-link-body {
+  margin: 20px;
+}
+.text-top {
+  font-size: 15px;
+  opacity: 0.8;
+}
+.text-bot {
+  font-size: 20px;
+  opacity: transparent;
+}
+
+.categories-item {
+  padding: 10px;
+  list-style-type: none;
+  color: white;
+}
+.categories-item:first-child {
+  margin-top: 12px;
+}
+.product-categories-home {
+  background: #b1d1c9;
+}
+.categories-item:hover {
+  /* hover slide from left to right, not hover slide right to left */
+  cursor: pointer;
+  animation: slide 0.35s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.overley-banner {
+  position: relative;
+}
+.overley-box {
+  width: 382px;
+  height: 245px;
+  background-color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.overley-box-child {
+  width: 360px;
+  height: 225px;
+  border: 1px solid #b1d1c9;
+  text-align: center;
+  margin: 10px;
+}
+.overley-text {
+  font-size: 35px;
+  margin-top: 37px;
+}
+.overley-link {
+  color: #b1d1c9;
+  font-size: 15px;
+}
+.overley-link:hover {
+  color: #b1d1c9;
+}
+
+.carde {
+  width: 370px;
+  height: 275px;
+  background-color: white;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid #b1d1c9;
+  display: flex;
+  text-align: center;
+}
+.carde_text {
+  font-size: 31px;
+  margin-top: 55px;
+  line-height: 35px;
+}
+.carde_link {
+  color: #b1d1c9;
+  font-size: 15px;
+}
+
+.carde-link:hover {
+  color: #b1d1c9;
+}
+.nav-product-text {
+    font-size: 31px;
+}
+.nav-link-product {
+    color: gray;
+}
+
+/* footer */
+.sidebar .text-left{
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+}
+
+.scroll-to-top {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    text-align: center; 
+    border-radius: 0;
+}
+.card img:hover {
+    opacity: 0;
+}
+.card:hover {
+    background: url("https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-19-300x300.jpg") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #b1d1c9;
+}
+.card-title {
+    text-decoration: none;
+    color: #333;
+}
+.card-title:hover {
+    color: #b1d1c9;
+}
+.card-text {
+    color: #b1d1c9;
+}
+.product_list-bot {
+    margin-top: 20px;
+}
+
+.image-body {
+    margin: 50px;
+}
+.image-body:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* footer */
+.any-payment {
+    float: right;
+}
+/* footer */
+
