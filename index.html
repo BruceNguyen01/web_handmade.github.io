@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-sm bg-light">
       <div class="container">
         <ul class="navbar-nav ms-5">
-          <li class="nav-item">
+          <div class="nav-item">
             <div class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -38,7 +38,7 @@
               >
                 English
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu shadow">
                 <div class="flag-box">
                   <img
                     class="flag"
@@ -75,7 +75,7 @@
               >
                 USD
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu shadow">
                 <li><a class="dropdown-item" href="#">USD - US Dolar</a></li>
                 <li><a class="dropdown-item" href="#">EUR - Euro</a></li>
                 <li>
@@ -86,7 +86,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </div>
         </ul>
       </div>
 
@@ -136,21 +136,23 @@
             </div>
 
             <div class="social">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class="fab fa-twitter icon"></i></a>
+              <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+              <a href="#"><i class="fab fa-instagram icon"></i></a>
+              <a href="#"><i class="fab fa-google icon"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4">
           <div class="header header-center">
-            <img
-              src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/logo-02.png"
-              alt="logo Handmade"
-              class="logo_handmade"
-            />
+            <a href="#">
+              <img
+                src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/logo-02.png"
+                alt="logo Handmade"
+                class="logo_handmade"
+              />
+            </a>
           </div>
         </div>
 
@@ -159,7 +161,7 @@
             <i class="fa fa-phone"></i>
             <span>+(102) 3456 789</span>
             <div class="cart">
-              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-shopping-cart icon"></i>
               <span class="badge bg-black align-top">0</span>
               <span>$0.00</span>
             </div>
@@ -172,7 +174,7 @@
     <!--Body-->
     <div class="wrapper">
       <nav class="navbar navbar-expand-sm bg-light">
-        <div class="container">
+        <div class="container col-11">
           <ul class="navbar-nav ms-5">
             <li class="nav-item">
               <a class="nav-link-body nav-link" href="#">HOME</a>
@@ -197,42 +199,57 @@
             </li>
           </ul>
         </div>
-        <!--  -->
-        <div class="modal" id="myModal">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Modal Headingqdwdqwdqw</h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
+        <div class="container col-1">
+          <!-- icon search -->
+          <div class="search icon-search-nav">
+            <i
+              class="fas fa-search"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+              type="button"
+            ></i>
+          </div>
+          <!--  -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">ENTER YOUR KEYWORD</h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
 
-              <!-- Modal body -->
-              <div class="modal-body">
-                Modal body..
-              </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="input-group rounded">
+                    <input
+                      type="search"
+                      style="max-width: 200px;"
+                      class="form-control rounded"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="search-addon"
+                    />
+                  </div>
+                </div>
 
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-danger"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <span class="input-group-text border-0" id="search-addon">
+                    <i type="button" class="fas fa-search"></i>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!--  -->
+          <!--  -->
+        </div>
       </nav>
-      <hr />
     </div>
     <!--  -->
 
@@ -248,7 +265,6 @@
                     src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-home-2.jpg)"
                     alt=""
                   />
-                  <div class="link-banner-box"></div>
                 </a>
                 <div class="overley-box">
                   <div class="overley-box-child">
@@ -278,36 +294,44 @@
             </div>
           </div>
 
+          <!-- card-lmr -->
           <div class="row">
             <div class="col-lg-4">
-              <div class="carde carde-left">
-                <div class="carde_text">
-                  <p>
-                    What item do your favorite brands and bloggers love ?
-                  </p>
-                </div>
-                <a class="carde_link" href="#">Browse Favorite</a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="carde carde-mid">
-                <p class="carde_text carde_text-mid">
-                  handmade soaps class
-                </p>
-
-                <a class="carde_link" href="#">23 sept</a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="carde carde-right">
-                <div class="carde_text carde_text-right">
-                  <p>
-                    Happy Mother's Day
+              <div class="card card-left">
+                <div class="card-body card-left-body">
+                  <p class="card-title card-left-title">
+                    What item do your
                     <br />
-                    Giftscarde
+                    favorite brands and
+                    <br />
+                    bloggers love
                   </p>
+                  <a href="#" class="card-link card-left-link">
+                    Browse Favorite
+                  </a>
                 </div>
-                <a href="#" class="carde_link">Browse Favorite</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-mid">
+                <div class="card-body card-mid-body">
+                  <p class="card-title card-mid-title">handmade soas class</p>
+                  <a href="#" class="card-link card-mid-link">23 sept</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-right">
+                <div class="card-body card-right-body">
+                  <p class="card-title card-right-title">
+                    Happy Mother's day
+                    <br />
+                    Giftcards
+                  </p>
+                  <a href="#" class="card-link card-right-link">
+                    Browse Favorite
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -317,7 +341,7 @@
             <div class="nav-product-text col-lg-6">
               New Arrivals
             </div>
-            <div class="nav col-lg-6">
+            <div class="nav col-lg-6 d-flex flex-row-reverse">
               <li class="nav-item">
                 <a class="nav-link nav-link-product" href="#">Birthday Gifts</a>
               </li>
@@ -336,55 +360,195 @@
           <div class="container product_list-top">
             <div class="row">
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top"
-                    alt="Product"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-title">Birthday Grouped</a>
-                    <p class="card-text">$100.00</p>
+                <div class="card card-product" style="width: 18rem;">
+                  <div class="card-product-image">
+                    <img
+                      src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
+                      class="card-img-top"
+                      alt="Product"
+                    />
+                    <div class="card-body card-body-product">
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Compare"
+                          class="fas fa-exchange-alt"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Wishlist"
+                          class="fas fa-heart"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Quick view"
+                          class="fas fa-search"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="View products"
+                          class="fas fa-shopping-cart"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-product-content">
+                    <a href="#" class="card-title card-product-title">
+                      Birthday Grouped
+                    </a>
+                    <p class="card-text card-product-text">$100.00</p>
                   </div>
                 </div>
               </div>
 
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top"
-                    alt="Product"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-title">Birthday Grouped</a>
-                    <p class="card-text">$100.00</p>
+                <div class="card card-product" style="width: 18rem;">
+                  <div class="card-product-image">
+                    <img
+                      src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
+                      class="card-img-top"
+                      alt="Product"
+                    />
+                    <div class="card-body card-body-product">
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Compare"
+                          class="fas fa-exchange-alt"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Wishlist"
+                          class="fas fa-heart"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Quick view"
+                          class="fas fa-search"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="View products"
+                          class="fas fa-shopping-cart"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-product-content">
+                    <a href="#" class="card-title card-product-title">
+                      Birthday Grouped
+                    </a>
+                    <p class="card-text card-product-text">$100.00</p>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top"
-                    alt="Product"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-title">Birthday Grouped</a>
-                    <p class="card-text">$100.00</p>
+                <div class="card card-product" style="width: 18rem;">
+                  <div class="card-product-image">
+                    <img
+                      src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
+                      class="card-img-top"
+                      alt="Product"
+                    />
+                    <div class="card-body card-body-product">
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Compare"
+                          class="fas fa-exchange-alt"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Wishlist"
+                          class="fas fa-heart"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Quick view"
+                          class="fas fa-search"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="View products"
+                          class="fas fa-shopping-cart"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-product-content">
+                    <a href="#" class="card-title card-product-title">
+                      Birthday Grouped
+                    </a>
+                    <p class="card-text card-product-text">$100.00</p>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top"
-                    alt="Product"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-title">Birthday Grouped</a>
-                    <p class="card-text">$100.00</p>
+                <div class="card card-product" style="width: 18rem;">
+                  <div class="card-product-image">
+                    <img
+                      src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
+                      class="card-img-top"
+                      alt="Product"
+                    />
+                    <div class="card-body card-body-product">
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Compare"
+                          class="fas fa-exchange-alt"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Wishlist"
+                          class="fas fa-heart"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Quick view"
+                          class="fas fa-search"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="View products"
+                          class="fas fa-shopping-cart"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-product-content">
+                    <a href="#" class="card-title card-product-title">
+                      Birthday Grouped
+                    </a>
+                    <p class="card-text card-product-text">$100.00</p>
                   </div>
                 </div>
               </div>
@@ -394,136 +558,651 @@
           <div class="container product_list-bot">
             <div class="row">
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top"
-                    alt="Product"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-title">Birthday Grouped</a>
-                    <p class="card-text">$100.00</p>
+                <div class="card card-product" style="width: 18rem;">
+                  <div class="card-product-image">
+                    <img
+                      src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
+                      class="card-img-top"
+                      alt="Product"
+                    />
+                    <div class="card-body card-body-product">
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Compare"
+                          class="fas fa-exchange-alt"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Wishlist"
+                          class="fas fa-heart"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Quick view"
+                          class="fas fa-search"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="View products"
+                          class="fas fa-shopping-cart"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-product-content">
+                    <a href="#" class="card-title card-product-title">
+                      Birthday Grouped
+                    </a>
+                    <p class="card-text card-product-text">$100.00</p>
                   </div>
                 </div>
               </div>
 
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top"
-                    alt="Product"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-title">Birthday Grouped</a>
-                    <p class="card-text">$100.00</p>
+                <div class="card card-product" style="width: 18rem;">
+                  <div class="card-product-image">
+                    <img
+                      src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
+                      class="card-img-top"
+                      alt="Product"
+                    />
+                    <div class="card-body card-body-product">
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Compare"
+                          class="fas fa-exchange-alt"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Wishlist"
+                          class="fas fa-heart"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Quick view"
+                          class="fas fa-search"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="View products"
+                          class="fas fa-shopping-cart"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-product-content">
+                    <a href="#" class="card-title card-product-title">
+                      Birthday Grouped
+                    </a>
+                    <p class="card-text card-product-text">$100.00</p>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top"
-                    alt="Product"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-title">Birthday Grouped</a>
-                    <p class="card-text">$100.00</p>
+                <div class="card card-product" style="width: 18rem;">
+                  <div class="card-product-image">
+                    <img
+                      src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
+                      class="card-img-top"
+                      alt="Product"
+                    />
+                    <div class="card-body card-body-product">
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Compare"
+                          class="fas fa-exchange-alt"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Wishlist"
+                          class="fas fa-heart"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Quick view"
+                          class="fas fa-search"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="View products"
+                          class="fas fa-shopping-cart"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-product-content">
+                    <a href="#" class="card-title card-product-title">
+                      Birthday Grouped
+                    </a>
+                    <p class="card-text card-product-text">$100.00</p>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top"
-                    alt="Product"
-                  />
-                  <div class="card-body">
-                    <a href="#" class="card-title">Birthday Grouped</a>
-                    <p class="card-text">$100.00</p>
+                <div class="card card-product" style="width: 18rem;">
+                  <div class="card-product-image">
+                    <img
+                      src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
+                      class="card-img-top"
+                      alt="Product"
+                    />
+                    <div class="card-body card-body-product">
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Compare"
+                          class="fas fa-exchange-alt"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Wishlist"
+                          class="fas fa-heart"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="Quick view"
+                          class="fas fa-search"
+                        ></i>
+                      </span>
+                      <span class="border border-product">
+                        <i
+                          data-bs-toggle="tooltip"
+                          title="View products"
+                          class="fas fa-shopping-cart"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-product-content">
+                    <a href="#" class="card-title card-product-title">
+                      Birthday Grouped
+                    </a>
+                    <p class="card-text card-product-text">$100.00</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="image-body">
+          <!-- <div class="image-body">
             <img
               src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-home-21.jpg"
               alt=""
             />
+          </div> -->
+          <div class="wrapper">
+            <div class="image-body">
+              <a href="#">
+                <img
+                  src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-home-21.jpg"
+                  alt="nothing"
+                />
+              </a>
+              <div class="overley-box-second">
+                <p class="overley-text">
+                  Shop Featured Collection
+                </p>
+                <a href="#" class="overley-link">
+                  nemo enim ipsam voluptatem
+                  <br />
+                  quia voluptas sit aspernatur
+                </a>
+              </div>
+            </div>
           </div>
+
+          <!--  -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <nav class="navbar navbar-expand-sm slider">
+                  <div class="container-fluid" style="width: 300px;">
+                    <a class="navbar-brand slider-image" href="#">
+                      <img
+                        src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/our-team-1-123x123.jpg"
+                        alt="Avatar Logo"
+                        style="width: 150px;"
+                        class="rounded-pill"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="container-fluid slider_content d-flex flex-column"
+                  >
+                    <div class="slider_content-name-para">
+                      <span class="navbar-brand slider-text">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aliquam ducimus dolore,
+                        <br />
+                        id alias aut impedit esse iure quasi nam"
+                      </span>
+                    </div>
+                    <div
+                      class="slider_content-name d-flex justify-content-start"
+                    >
+                      <h3 class="p-color">David Miler</h3>
+                      <span class="s-color">Graphic Designer</span>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="carousel-item">
+                <nav class="navbar navbar-expand-sm slider">
+                  <div class="container-fluid" style="width: 300px;">
+                    <a class="navbar-brand slider-image" href="#">
+                      <img
+                        src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/our-team-1-123x123.jpg"
+                        alt="Avatar Logo"
+                        style="width: 150px;"
+                        class="rounded-pill"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="container-fluid slider_content d-flex flex-column"
+                  >
+                    <div class="slider_content-name-para">
+                      <span class="navbar-brand slider-text">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aliquam ducimus dolore,
+                        <br />
+                        id alias aut impedit esse iure quasi nam"
+                      </span>
+                    </div>
+                    <div
+                      class="slider_content-name d-flex justify-content-start"
+                    >
+                      <h3 class="p-color">David Miler</h3>
+                      <span class="s-color">Graphic Designer</span>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="carousel-item">
+                <nav class="navbar navbar-expand-sm slider">
+                  <div class="container-fluid" style="width: 300px;">
+                    <a class="navbar-brand slider-image" href="#">
+                      <img
+                        src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/our-team-1-123x123.jpg"
+                        alt="Avatar Logo"
+                        style="width: 150px;"
+                        class="rounded-pill"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="container-fluid slider_content d-flex flex-column"
+                  >
+                    <div class="slider_content-name-para">
+                      <span class="navbar-brand slider-text">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aliquam ducimus dolore,
+                        <br />
+                        id alias aut impedit esse iure quasi nam"
+                      </span>
+                    </div>
+                    <div
+                      class="slider_content-name d-flex justify-content-start"
+                    >
+                      <h3 class="p-color">David Miler</h3>
+                      <span class="s-color">Graphic Designer</span>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button
+              class="carousel-control-prev btn-slide p-color"
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide="prev"
+            ></button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide="next"
+            ></button>
+          </div>
+          <!-- Slider -->
+
+          <!--  -->
+          <hr style="color: #b1d1c9;" />
+          <!-- From our blog -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="owl-item" style="width: 323px;">
+                  <div class="handmade-post-item">
+                    <div class="handmade-post-image">
+                      <div class="entry-thumbnail">
+                        <a
+                          href="https://themes.g5plus.net/handmade/here-are-many-variations-of-passages/"
+                          title="Here Are Many Variations Of Passages"
+                          class="entry-thumbnail_overlay"
+                        >
+                          <img
+                            width="380"
+                            height="235"
+                            class="img-responsive"
+                            src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-380x235.jpg"
+                            alt="Here Are Many Variations Of Passages"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="handmade-post-content">
+                      <h6 class="entry-item">
+                        <a
+                          href="https://themes.g5plus.net/handmade/here-are-many-variations-of-passages/"
+                          rel="bookmark"
+                          title="Here Are Many Variations Of Passages"
+                        >
+                          Here Are Many Variations Of Passages
+                        </a>
+                      </h6>
+                      <div class="post-entry-meta entry-item">
+                        <span class="handmade-post-date">August 2, 2015</span>
+                        |
+                        <span>
+                          <a
+                            class="handmade-post-author"
+                            href="https://themes.g5plus.net/handmade/author/g5plusacc/"
+                          >
+                            g5plusacc
+                          </a>
+                        </span>
+                        <div class="entry-item">
+                          <span>
+                            In a professional context it often happens that
+                            private or corporate clients corder a publication to
+                            be made and presented with the actual ...
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="owl-item" style="width: 323px;">
+                  <div class="handmade-post-item">
+                    <div class="handmade-post-image">
+                      <div class="entry-thumbnail">
+                        <a
+                          href="https://themes.g5plus.net/handmade/here-are-many-variations-of-passages/"
+                          title="Here Are Many Variations Of Passages"
+                          class="entry-thumbnail_overlay"
+                        >
+                          <img
+                            width="380"
+                            height="235"
+                            class="img-responsive"
+                            src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-380x235.jpg"
+                            alt="Here Are Many Variations Of Passages"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="handmade-post-content">
+                      <h6 class="entry-item">
+                        <a
+                          href="https://themes.g5plus.net/handmade/here-are-many-variations-of-passages/"
+                          rel="bookmark"
+                          title="Here Are Many Variations Of Passages"
+                        >
+                          Here Are Many Variations Of Passages
+                        </a>
+                      </h6>
+                      <div class="post-entry-meta entry-item">
+                        <span class="handmade-post-date">August 2, 2015</span>
+                        |
+                        <span>
+                          <a
+                            class="handmade-post-author"
+                            href="https://themes.g5plus.net/handmade/author/g5plusacc/"
+                          >
+                            g5plusacc
+                          </a>
+                        </span>
+                        <div class="entry-item">
+                          <span>
+                            In a professional context it often happens that
+                            private or corporate clients corder a publication to
+                            be made and presented with the actual ...
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="owl-item" style="width: 323px;">
+                  <div class="handmade-post-item">
+                    <div class="handmade-post-image">
+                      <div class="entry-thumbnail">
+                        <a
+                          href="https://themes.g5plus.net/handmade/here-are-many-variations-of-passages/"
+                          title="Here Are Many Variations Of Passages"
+                          class="entry-thumbnail_overlay"
+                        >
+                          <img
+                            width="380"
+                            height="235"
+                            class="img-responsive"
+                            src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-380x235.jpg"
+                            alt="Here Are Many Variations Of Passages"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="handmade-post-content">
+                      <h6 class="entry-item">
+                        <a
+                          href="https://themes.g5plus.net/handmade/here-are-many-variations-of-passages/"
+                          rel="bookmark"
+                          title="Here Are Many Variations Of Passages"
+                        >
+                          Here Are Many Variations Of Passages
+                        </a>
+                      </h6>
+                      <div class="post-entry-meta entry-item">
+                        <span class="handmade-post-date">August 2, 2015</span>
+                        |
+                        <span>
+                          <a
+                            class="handmade-post-author"
+                            href="https://themes.g5plus.net/handmade/author/g5plusacc/"
+                          >
+                            g5plusacc
+                          </a>
+                        </span>
+                        <div class="entry-item">
+                          <span>
+                            In a professional context it often happens that
+                            private or corporate clients corder a publication to
+                            be made and presented with the actual ...
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <!-- Map - Scroll up -->
+          <div class="scroll-map row ms-auto">
+            <div class="map col-lg-6 bg-light d-flex flex-row-reverse">
+              <nav class="navbar navbar-light bg-light">
+                <i class="fa-thin fa-circle-up map-icon"></i>
+                <button
+                  data-bs-toggle="collapse"
+                  data-bs-target="#demo"
+                  class="navbar-brand map-title"
+                  href="#"
+                >
+                  SEE MAP
+                </button>
+                <div id="demo" class="collapse"></div>
+              </nav>
+            </div>
+            <div class="scroll-up col-lg-6 bg-light d-flex flex-row">
+              <nav class="navbar navbar-light bg-light">
+                <i class="fa-thin fa-circle-up scroll-icon"></i>
+                <button
+                  onclick="scrollWin(0,-100000)"
+                  class="navbar-brand scroll-title"
+                  href="#"
+                >
+                  SCROLL UP
+                </button>
+              </nav>
+            </div>
+            <div id="demo" class="collapse maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4832742161134!2d106.72538591458903!3d10.774249592322997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175256f6c868a55%3A0xbb1be3d7b7a4abfd!2sGolden%20Owl%20Consulting!5e0!3m2!1svi!2s!4v1663750927304!5m2!1svi!2s"
+                width="600"
+                height="450"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!--  -->
 
           <!--  -->
           <div class="container">
             <div class="row">
-                <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-1">
-                  <aside
-                    id="wolverine-footer-logo-2"
-                    class="widget widget-footer-logo"
-                  >
-                    <div class="footer-logo">
-                      <a href="https://themes.g5plus.net/handmade">
-                        <img
-                          class="footer-logo-img"
-                          src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
-                          alt="Handmade"
-                        />
-                      </a>
-                      <div class="sub-description">
+              <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-1">
+                <aside
+                  id="wolverine-footer-logo-2"
+                  class="widget widget-footer-logo"
+                >
+                  <div class="footer-logo">
+                    <a href="https://themes.g5plus.net/handmade">
+                      <img
+                        class="footer-logo-img"
+                        src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png"
+                        alt="Handmade"
+                      />
+                    </a>
+                    <div class="sub-description">
+                      <span>
                         Letterpress, gold foil stamping, and more. Quality,
                         sustainable materials like thick 100% PCW paper and
                         veg-based inks.
-                      </div>
+                      </span>
                     </div>
-                  </aside>
-                </div>
-              
-                <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-2">
-                  <aside id="nav_menu-3" class="widget widget_nav_menu">
-                    <h4 class="widget-title"><span>Information</span></h4>
-                    <div class="menu-footer-information-container">
-                      <ul id="menu-footer-information" class="menu">
-                        <li
-                          id="menu-item-2430"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2430"
-                        >
-                          <a href="#">About Us</a>
-                        </li>
-                        <li
-                          id="menu-item-2431"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2431"
-                        >
-                          <a href="#">Delivery Information</a>
-                        </li>
-                        <li
-                          id="menu-item-2432"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2432"
-                        >
-                          <a href="#">Privacy policy</a>
-                        </li>
-                        <li
-                          id="menu-item-2433"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2433"
-                        >
-                          <a href="#">Terms &amp; Conditions</a>
-                        </li>
-                        <li
-                          id="menu-item-2434"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2434"
-                        >
-                          <a href="#">Contact Us</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </aside>
-                </div>
+                  </div>
+                </aside>
+              </div>
+
+              <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-2">
+                <aside id="nav_menu-3" class="widget widget_nav_menu">
+                  <h4 class="widget-title">
+                    <span class="title-nav_menu">Information</span>
+                  </h4>
+                  <div class="menu-footer-information-container">
+                    <ul id="menu-footer-information" class="menu">
+                      <li
+                        id="menu-item-2430"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2430"
+                      >
+                        <a href="#">About Us</a>
+                      </li>
+                      <li
+                        id="menu-item-2431"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2431"
+                      >
+                        <a href="#">Delivery Information</a>
+                      </li>
+                      <li
+                        id="menu-item-2432"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2432"
+                      >
+                        <a href="#">Privacy policy</a>
+                      </li>
+                      <li
+                        id="menu-item-2433"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2433"
+                      >
+                        <a href="#">Terms &amp; Conditions</a>
+                      </li>
+                      <li
+                        id="menu-item-2434"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2434"
+                      >
+                        <a href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </aside>
+              </div>
 
               <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-3">
                 <aside id="nav_menu-4" class="widget widget_nav_menu">
-                  <h4 class="widget-title"><span>Extras</span></h4>
+                  <h4 class="widget-title">
+                    <span class="title-nav_menu">Extras</span>
+                  </h4>
                   <div class="menu-footer-extras-container">
                     <ul id="menu-footer-extras" class="menu">
                       <li
@@ -566,32 +1245,33 @@
                   id="text-2"
                   class="widget-title-s-font widget widget_text"
                 >
-                  <h4 class="widget-title"><span>Contact us</span></h4>
+                  <h4 class="widget-title">
+                    <span class="title-nav_menu">Contact us</span>
+                  </h4>
                   <div class="textwidget">
                     <ul class="footer-contact-us">
-                      <li>
-                        <i class="fa fa-map-marker p-color"></i>
-                        <span>
-                          Great Store London Oxford Street, 012 United
-                          Kingdom.
+                      <li class="footer-contact-us--child">
+                        <i class="fa fa-map-marker icon"></i>
+                        <span class="contact-us-text">
+                          Great Store London Oxford Street, 012 United Kingdom.
                         </span>
                       </li>
-                      <li>
-                        <i class="fa fa-envelope p-color"></i>
-                        <span>emailgreatstore@gmail.com</span>
+                      <li class="footer-contact-us--child">
+                        <i class="fa fa-envelope icon"></i>
+                        <span class="contact-us-text">
+                          emailgreatstore@gmail.com
+                        </span>
                       </li>
-                      <li>
-                        <i class="fa fa-phone p-color"></i>
-                        <span>(+92) 3456 7890</span>
+                      <li class="footer-contact-us--child">
+                        <i class="fa fa-phone icon"></i>
+                        <span class="contact-us-text">(+92) 3456 7890</span>
                       </li>
                     </ul>
                   </div>
                 </aside>
               </div>
-
             </div>
           </div>
-
           <!--  -->
         </div>
       </div>
@@ -607,8 +1287,8 @@
               class="copyright margin-top-10 widget widget_text"
             >
               <div class="textwidget">
-                <div>© Copyright 2015. Powered by WordPress.</div>
-                <div>Theme made by G5Theme</div>
+                <div><span>© Copyright 2015. Powered by WordPress.</span></div>
+                <div><span>Theme made by G5Theme</span></div>
               </div>
             </aside>
           </div>
@@ -618,7 +1298,7 @@
               class="widget widget-payment-gate"
             >
               <ul class="payment-gate">
-                <li class="any-payment" >
+                <li class="any-payment">
                   <a
                     target="_blank"
                     href="http://www.mastercard.com"
@@ -681,4 +1361,30 @@
       </div>
     </div>
   </body>
+  <script>
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]'),
+    )
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    function scrollWin(x, y) {
+      window.scrollBy(x, y)
+    }
+  </script>
+
+  <script>
+    function myMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.12085),
+        zoom: 5,
+      }
+      var map = new google.maps.Map(
+        document.getElementById('googleMap'),
+        mapProp,
+      )
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </html>
