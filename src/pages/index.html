@@ -171,10 +171,33 @@
       </div>
     </div>
 
+    <!--  -->
+    <div class="offcanvas offcanvas-start text-bg-dark" id="canvas">
+      <div class="offcanvas-body">
+          <form class="form-inline d-flex">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <i class="fas fa-search"></i>  </button>
+          </form>
+
+          <ul class="categories">
+            <li>HOME</li>
+            <li>PAGES</li>
+            <li>BLOG</li>
+            <li>PROJECT</li>
+            <li>FEATURE</li>
+            <li>SHOP</li>
+            <li>NEW POSTS</li>
+          </ul>
+        
+      </div>
+    </div>
     <!-- nav responsive -->
     <nav class="navbar navbar-light bg-dark rs-nav">
       <div class="container">
-        <button class="fa-solid fa-bars bg-dark"> </button>
+        <button class="fa-solid fa-bars bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvas"> 
+
+
+        </button>
         <div>
           <button class="fa-sharp fa-solid fa-shop bg-dark"></button>
           <button class="fa-solid fa-magnifying-glass bg-dark" data-bs-toggle="modal"
@@ -185,7 +208,7 @@
       </div>
     </nav>
     <!--  -->
-    
+
 
     <!--  -->
     <hr class="hr-first" />
