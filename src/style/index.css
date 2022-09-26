@@ -1,3 +1,6 @@
+body {
+  font-family: "Varela Round";
+}
 .link-banner img {
   width: 100%;
   height: 100%;
@@ -103,11 +106,34 @@ img {
   font-size: 20px;
   opacity: transparent;
 }
-
+.categories {
+  padding: 0;
+}
+.collapse-content {
+  padding: 0;
+}
 .categories-item {
   padding: 10px;
   list-style-type: none;
   color: white;
+}
+.categories-title {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid GRAY;
+  margin: 10px 0 10px 0;
+  color: #ddd;
+}
+.categories-responsive {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid gray;
+  margin: 5px 0 5px 0;
+  color: #ddd;
+}
+.categories-responsive:hover {
+  background-color: gray;
+  color: #DEC18C;
 }
 
 .product-categories-home {
@@ -117,7 +143,7 @@ img {
 .categories-item:hover {
   /* hover slide from left to right, not hover slide right to left */
   cursor: pointer;
-  animation: slide 0.35s ease-in-out;
+  animation: slide .5s ease-in-out;
   animation-fill-mode: both;
 }
 
