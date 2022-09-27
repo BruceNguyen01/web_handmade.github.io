@@ -1,22 +1,18 @@
 {
-  "name": "project-small-demo",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  },
+  "name": "demo-go",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e ejs,js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BruceNguyen01/Web_handmade.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BruceNguyen01/Web_handmade/issues"
-  },
-  "homepage": "https://github.com/BruceNguyen01/Web_handmade#readme",
-  "dependencies": {
-    "node-sass": "^7.0.3"
-  }
+  "description": ""
 }
