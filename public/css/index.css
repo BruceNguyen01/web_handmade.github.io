@@ -755,6 +755,21 @@ body {
       display: block;
     }
   }
+
+  .box-scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #b1d1c9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+  }
   
   .dropbtn {
     padding: 16px;

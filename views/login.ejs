@@ -13,7 +13,7 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form action="#" id="sign-up">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -22,13 +22,13 @@
                 </div>
                 <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" name="email" placeholder="Email" />
+                <input type="password" name="password" placeholder="Password" />
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="#" id="sign-in">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -36,8 +36,8 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" name="email" placeholder="Email" />
+                <input type="password" name="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
                 <button>Sign In</button>
             </form>
@@ -60,6 +60,10 @@
         </div>
     </div>
 
+    <div class="back-to-home">
+        <a href="/"><i class="fas fa-home" style="font-size:50px;color:white"></i></a>
+    </div>
+
     <script>
         const signUpButton = document.getElementById('signUp')
         const signInButton = document.getElementById('signIn')
@@ -73,6 +77,68 @@
             container.classList.remove('right-panel-active')
         })
     </script>
+
+    <!-- jquery validator -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#sign-in').validate({
+                rules: {
+                    "email": {
+                        required: true,
+                        email: true
+                    },
+                    "password": {
+                        required: true,
+                        minlength: 6
+                    }
+                },
+                messages: {
+                    "email": {
+                        required: "Please enter your email",
+                        email: "Please enter a valid email"
+                    },
+                    "password": {
+                        required: "Please enter your password",
+                        minlength: "Password must be at least 6 characters"
+                    }
+                }
+            })
+        })
+
+        $(document).ready(function() {
+            $('#sign-up').validate({
+                rules: {
+                    "email": {
+                        required: true,
+                        email: true
+                    },
+                    "password": {
+                        required: true,
+                        minlength: 6
+                    }
+                },
+                messages: {
+                    "email": {
+                        required: "Please enter your email",
+                        email: "Please enter a valid email"
+                    },
+                    "password": {
+                        required: "Please enter your password",
+                        minlength: "Password must be at least 6 characters"
+                    }
+                }
+            })
+        })
+       
+
+
+       
+    </script>
+
+
+    <!--  -->
 </body>
 
 </html>

@@ -11,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- link file index.css  -->
   <link rel="stylesheet" href="/css/index.css" />
+  <script src="/public/js/script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <title>Document</title>
@@ -32,19 +33,19 @@
               <ul class="dropdown-menu shadow">
                 <div class="flag-box">
                   <img class="flag"
-                    src="https://themes.g5plus.net/handmade/wp-content/themes/handmade/assets/images/flags/en.png"
+                    src="./image/en.png"
                     alt="" />
                   <a class="dropdown-item" href="#">French</a>
                 </div>
                 <div class="flag-box">
                   <img class="flag"
-                    src="https://themes.g5plus.net/handmade/wp-content/themes/handmade/assets/images/flags/de.png"
+                    src="./image/de.png"
                     alt="" />
                   <a class="dropdown-item" href="#">German</a>
                 </div>
                 <div class="flag-box">
                   <img class="flag"
-                    src="https://themes.g5plus.net/handmade/wp-content/themes/handmade/assets/images/flags/ja.png"
+                    src="./image/ja.png"
                     alt="" />
                   <a class="dropdown-item" href="#">Japanese</a>
                 </div>
@@ -124,8 +125,8 @@
 
       <div class="col-lg-4">
         <div class="header header-center">
-          <a href="#">
-            <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/logo-02.png" alt="logo Handmade"
+          <a href="/">
+            <img src="./image/logo-02.png" alt="logo Handmade"
               class="logo_handmade" />
           </a>
         </div>
@@ -564,7 +565,7 @@
         <div class="col-lg-9">
           <div class="overley-banner">
             <a href="#" class="link-banner">
-              <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-home-2.jpg)" alt="" />
+              <img src="./image/banner-home-2.jpg" alt="" />
             </a>
             <div class="overley-box">
               <div class="overley-box-child">
@@ -649,7 +650,6 @@
           </div>
         </div>
       </div>
-
       <!--  -->
       <hr class="hr-product" />
 
@@ -660,8 +660,37 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top" alt="Product" />
+                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                    class="card-img-top" alt="Product" /></a>
+                  <div class="card-body card-body-product">
+                    <span class="border border-product">
+                      <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
+                    </span>
+                    <span class="border border-product">
+                      <i data-bs-toggle="tooltip"  title="Wishlist" class="fas fa-heart wish-list"></i>
+                    </span>
+                    <span class="border border-product">
+                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search search"></i>
+                    </span>
+                    <span class="border border-product">
+                      <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart shopping"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card-product-content">
+                  <a href="product-detail" class="card-title card-product-title">
+                    Birthday Grouped
+                  </a>
+                  <p class="card-text card-product-text">$100.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6 col-6">
+              <div class="card card-product">
+                <div class="card-product-image">
+                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                    class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
@@ -689,8 +718,8 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top" alt="Product" />
+                  <a href="product-detail"> <a href="product-detail"> <img src="./image/product-18.jpg"
+                    class="card-img-top" alt="Product" /></a></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
@@ -718,37 +747,8 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top" alt="Product" />
-                  <div class="card-body card-body-product">
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
-                    </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
-                    </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search"></i>
-                    </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="card-product-content">
-                  <a href="product-detail" class="card-title card-product-title">
-                    Birthday Grouped
-                  </a>
-                  <p class="card-text card-product-text">$100.00</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6 col-6">
-              <div class="card card-product">
-                <div class="card-product-image">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top" alt="Product" />
+                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                    class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
@@ -781,8 +781,8 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top" alt="Product" />
+                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                    class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
@@ -810,8 +810,8 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top" alt="Product" />
+                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                    class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
@@ -839,8 +839,8 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top" alt="Product" />
+                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                    class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
@@ -868,8 +868,8 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2013/06/product-18.jpg"
-                    class="card-img-top" alt="Product" />
+                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                    class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
@@ -900,7 +900,7 @@
 
       <div class="image-body">
         <a href="product-detail">
-          <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/banner-home-21.jpg" alt="nothing" />
+          <img src="./image/banner-home-21.jpg" alt="nothing" />
         </a>
         <div class="overley-box-second">
           <p class="overley-text">
@@ -922,7 +922,7 @@
             <div class="slider">
               <div class="col-lg-3">
                 <a class="slider-image" href="#">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/our-team-1-123x123.jpg"
+                  <img src="./image/our-team-1-123x123.jpg"
                     alt="Avatar Logo" style="width: 150px;" class="rounded-pill" />
                 </a>
               </div>
@@ -945,7 +945,7 @@
             <div class="slider">
               <div class="col-lg-3">
                 <a class="slider-image" href="#">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/our-team-1-123x123.jpg"
+                  <img src="./image/our-team-1-123x123.jpg"
                     alt="Avatar Logo" style="width: 150px;" class="rounded-pill" />
                 </a>
               </div>
@@ -968,7 +968,7 @@
             <div class="slider">
               <div class="col-lg-3">
                 <a class="slider-image" href="#">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/09/our-team-1-123x123.jpg"
+                  <img src="./image/our-team-1-123x123.jpg"
                     alt="Avatar Logo" style="width: 150px;" class="rounded-pill" />
                 </a>
               </div>
@@ -1041,7 +1041,7 @@
             <div class="entry-thumbnail">
               <a href="https://themes.g5plus.net/handmade/here-are-many-variations-of-passages/"
                 title="Here Are Many Variations Of Passages" class="entry-thumbnail_overlay">
-                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-380x235.jpg"
+                <img src="./image/news-02-380x235.jpg"
                   alt="Here Are Many Variations Of Passages" />
               </a>
             </div>
@@ -1076,7 +1076,7 @@
             <div class="entry-thumbnail">
               <a href="https://themes.g5plus.net/handmade/here-are-many-variations-of-passages/"
                 title="Here Are Many Variations Of Passages" class="entry-thumbnail_overlay" ;>
-                <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/08/news-02-380x235.jpg"
+                <img src="./image/news-02-380x235.jpg"
                   alt="Here Are Many Variations Of Passages" />
               </a>
             </div>
@@ -1145,7 +1145,7 @@
               <div class="footer-logo">
                 <a href="https://themes.g5plus.net/handmade">
                   <img class="footer-logo-img"
-                    src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/logo.png" alt="Handmade" />
+                    src="./image/logo.png" alt="Handmade" />
                 </a>
                 <div class="sub-description">
                   <span>
@@ -1273,41 +1273,44 @@
             <ul class="payment-gate">
               <li class="any-payment">
                 <a target="_blank" href="http://www.mastercard.com" title="Master card">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/master_card.jpg"
+                  <img src="./image/master_card.jpg"
                     alt="Master card" />
                 </a>
               </li>
               <li class="any-payment">
                 <a target="_blank" href="http://www.visa.com" title="Visa">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/visa.jpg" alt="Visa" />
+                  <img src="./image/visa.jpg" alt="Visa" />
                 </a>
               </li>
               <li class="any-payment">
                 <a target="_blank" href="https://www.paypal.com" title="Paypal">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/paypal.jpg" alt="Paypal" />
+                  <img src="./image/paypal.jpg" alt="Paypal" />
                 </a>
               </li>
               <li class="any-payment">
                 <a target="_blank" href="https://www.americanexpress.com/" title="American Express">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/american_express.jpg"
+                  <img src="./image/american_express.jpg"
                     alt="American Express" />
                 </a>
               </li>
               <li class="any-payment">
                 <a target="_blank" href="https://www.westernunion.com" title="Weston Union">
-                  <img src="https://themes.g5plus.net/handmade/wp-content/uploads/2015/10/weston_union.jpg"
+                  <img src="./image/weston_union.jpg"
                     alt="Weston Union" />
                 </a>
               </li>
             </ul>
           </aside>
+          <div class="box-scroll-to-top" onclick="scrollWin(0,-100000)">
+            <i class="fa-solid fa-up-long" ></i>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </body>
 
-<script src="../js/index.js"></script>
 <script>
   var tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]'),
@@ -1337,8 +1340,14 @@
 
 <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 
+  <script>
+    const wish = document.getElementsByClassName("dropdown-item")
 
+  console.log(wish.length())
+  </script>
 <!--  -->
 
 </html>
