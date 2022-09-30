@@ -7,13 +7,14 @@ async function getData() {
 }
 
 
-async function bindDataToProductDetail(callback) {
+async function bindDataToProductDetail(pagination = 1, callback) {
     const data = await getData();
-    return callback(data);
+    return callback(pagination, data);
 }
 
-bindDataToProductDetail( (data) => {
-    const                                                                                                                              htmls = Object.keys(data).map((item) => {
+
+  bindDataToProductDetail((pagination, data) => {
+    const htmls = Object.keys(data).map((item) => {
         return `
         <div class="card-product-image">
           <a href="product-detail"> <img src="./image/product-04-300x300.jpg"
@@ -38,15 +39,25 @@ bindDataToProductDetail( (data) => {
 
         <div class="card-product-content">
           <a href="product-detail" class="card-title card-product-title">
-            ${item.title}
+            ${data[item].title}
           </a>
           <p class="card-text card-product-text">$100.00</p>
         </div>
        `
     })
-    const cardProductList = document.querySelector('.card-product')
-    for (let i = 0; i < 8; i++) {
+    const sizeRender = 8;
+    const cardProductList = document.querySelectorAll('.card-product')
+    for (let i = (pagination-1)*sizeRender; i < (sizeRender*pagination); i++) {
         cardProductList[i].innerHTML = htmls[i];
-        console.log("connect success")
     }
 });
+
+// pagination
+bindDataByProductDetail()
+
+const selectPagination = document.querySelector('.two-pagination');
+selectPagination.addEventListener('click', (e) => {
+  bindDataByProductDetailByPagination(2);
+})
+
+

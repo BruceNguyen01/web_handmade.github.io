@@ -17,16 +17,6 @@
 </head>
 
 <body>
-  <!-- Messenger Plugin chat Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Plugin chat code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  
-
-
   <!-- header -->
   <%- include('header.ejs') %>
   
@@ -355,11 +345,11 @@
         <!-- pagination -->
         <nav aria-label="page navigation">
           <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            <li class="page-item previous-pagination"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item one-pagination"><a class="page-link" href="#">1</a></li>
+            <li class="page-item two-pagination"><a class="page-link" href="#">2</a></li>
+            <li class="page-item three-pagination"><a class="page-link" href="#">3</a></li>
+            <li class="page-item next-pagination"><a class="page-link" href="#">Next</a></li>
           </ul>
         </nav>
       <!--  -->
@@ -760,30 +750,7 @@
   <script src="/js/script.js"></script>
   <script src="/js/api.js"></script>
   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-  
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "100569799202511");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
 
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v15.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
 <!--  -->
 
 </html>
