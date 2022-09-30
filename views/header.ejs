@@ -11,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- link file index.css  -->
   <link rel="stylesheet" href="/css/index.css" />
+  <script src="/public/js/product-detail.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <title>Document</title>
@@ -31,15 +32,21 @@
               </a>
               <ul class="dropdown-menu shadow">
                 <div class="flag-box">
-                  <img class="flag" src="./image/en.png" alt="" />
+                  <img class="flag"
+                    src="./image/en.png"
+                    alt="" />
                   <a class="dropdown-item" href="#">French</a>
                 </div>
                 <div class="flag-box">
-                  <img class="flag" src="./image/de.png" alt="" />
+                  <img class="flag"
+                    src="./image/de.png"
+                    alt="" />
                   <a class="dropdown-item" href="#">German</a>
                 </div>
                 <div class="flag-box">
-                  <img class="flag" src="./image/ja.png" alt="" />
+                  <img class="flag"
+                    src="./image/ja.png"
+                    alt="" />
                   <a class="dropdown-item" href="#">Japanese</a>
                 </div>
               </ul>
@@ -119,7 +126,8 @@
       <div class="col-lg-4">
         <div class="header header-center">
           <a href="/">
-            <img src="./image/logo-02.png" alt="logo Handmade" class="logo_handmade" />
+            <img src="./image/logo-02.png" alt="logo Handmade"
+              class="logo_handmade" />
           </a>
         </div>
       </div>
@@ -128,10 +136,12 @@
         <div class="header header-right">
           <i class="fa fa-phone"></i>
           <span>+(102) 3456 789</span>
-          <div class="cart">
+          
+          <div class="carte">
+            
             <i class="fas fa-shopping-cart icon"></i>
-            <span class="badge bg-black align-top">0</span>
-            <span>$0.00</span>
+            <span class="badge bg-black align-top" style="font-size: 15px;">0</span>
+            <span class="totalCost">$0.00</span>
           </div>
         </div>
       </div>
@@ -243,10 +253,11 @@
 
 
   <!--  -->
+  <hr class="hr-first" />
   <!--Body-->
   <div class="container">
     <nav class="navbar navbar-expand-sm">
-      <div class="container col-11">
+      <div class="container col-9">
         <ul class="navbar-nav">
           <div class="nav-item dropdown">
             <button class="dropbtn" href="#">
@@ -507,80 +518,54 @@
       </div>
       </ul>
 
-      <div class="container col-1">
+      <div class="container col-3">
         <!-- icon search -->
-        <div class="search icon-search-nav">
-          <i class="fas fa-search" data-bs-toggle="modal" data-bs-target="#myModal" type="button"></i>
+        <div class="input-group rounded">
+          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
         </div>
         <!--  -->
-        <div class="modal" id="myModal">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">ENTER YOUR KEYWORD</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <!-- Modal body -->
-              <div class="modal-body">
-                <div class="input-group rounded">
-                  <input type="search" style="max-width: 200px;" class="form-control rounded" placeholder="Search"
-                    aria-label="Search" aria-describedby="search-addon" />
-                </div>
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <span class="input-group-text border-0" id="search-addon">
-                  <i type="button" class="fas fa-search"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         <!--  -->
       </div>
   </div>
   </nav>
   <hr class="new1" />
+  <!--  -->
 
   <div class="container">
-    <div class="row">
-      <div class="col-lg-9">
-        <div class="overley-banner">
-          <a href="#" class="link-banner">
-            <img src="./image/banner-home-2.jpg" alt="" />
-          </a>
-          <div class="overley-box">
-            <div class="overley-box-child">
-              <p class="overley-text">
-                How to decorate a birthday gift box
-              </p>
-              <a href="#" class="overley-link">View more</a>
-            </div>
+     <div class="row">
+    <div class="col-lg-9">
+      <div class="overley-banner">
+        <a href="#" class="link-banner">
+          <img src="./image/banner-home-2.jpg" alt="" />
+        </a>
+        <div class="overley-box">
+          <div class="overley-box-child">
+            <p class="overley-text">
+              How to decorate a birthday gift box
+            </p>
+            <a href="#" class="overley-link">View more</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
-        <div class="product-categories-home">
-          <ul>
-            <li class="categories-item">Uncategories (0)</li>
-            <li class="categories-item">Special Goods (0)</li>
-            <li class="categories-item">Romatic (0)</li>
-            <li class="categories-item">Personal (0)</li>
-            <li class="categories-item">Love (0)</li>
-            <li class="categories-item">Jewelry (0)</li>
-            <li class="categories-item">Ilumination (0)</li>
-            <li class="categories-item">Greeting Cards (0)</li>
-            <li class="categories-item">Every Day (0)</li>
-            <li class="categories-item">Birthday Gifts (0)</li>
-          </ul>
-        </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="product-categories-home">
+        <ul>
+          <li class="categories-item">Uncategories (0)</li>
+          <li class="categories-item">Special Goods (0)</li>
+          <li class="categories-item">Romatic (0)</li>
+          <li class="categories-item">Personal (0)</li>
+          <li class="categories-item">Love (0)</li>
+          <li class="categories-item">Jewelry (0)</li>
+          <li class="categories-item">Ilumination (0)</li>
+          <li class="categories-item">Greeting Cards (0)</li>
+          <li class="categories-item">Every Day (0)</li>
+          <li class="categories-item">Birthday Gifts (0)</li>
+        </ul>
       </div>
     </div>
   </div>
   </div>
-  <!--  -->
-
-  <!-- product item -->
+ 

@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/index.css" />
+ 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
         </script>
@@ -61,7 +62,7 @@
                             </div>
                             <a href="#reviews" class="woocommerce-review-link" rel="nofollow">
                                 (
-                                <span class="count">2</span>
+                                <span class="count-cmt">2</span>
                                 customer reviews)
                             </a>
                         </div>
@@ -81,19 +82,18 @@
                                 est. Mauris placerat eleifend leo.
                             </span>
                         </div>
-                        <form class="cart" action="https://themes.g5plus.net/handmade/product/yellow-pillow/"
-                            method="post" enctype="multipart/form-data">
+                        <div class="cart">
                             <div class="counter">
-                                <div class="btn">+</div>
-                                <div class="count">
+                                <div class="btn btn-plus">+</div>
+                                <div class="count-product">
                                     1
                                 </div>
-                                <div class="btn">-</div>
+                                <div class="btn btn-minus">-</div>
                             </div>
-                            <button type="submit" name="add-to-cart" value="1569" class="btn-add-to-cart">
+                            <button class="btn-add-to-cart">
                                 Add to cart
                             </button>
-                        </form>
+                        </div>
                         <div class="single-product-function">
                             <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1569 wishlist-fragment on-first-load"
                                 data-fragment-ref="1569"
@@ -525,10 +525,9 @@
 
         </div>
     </div>
-    <% - include('footer.ejs') %>
+    <%- include('footer.ejs') %>
 </body>
 
-
-
-
+<script src="/js/product-detail.js"></script>
+<script src="/js/api.js"></script>
 </html>

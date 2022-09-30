@@ -11,589 +11,29 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- link file index.css  -->
   <link rel="stylesheet" href="/css/index.css" />
-  <script src="/public/js/script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <!-- mobile -->
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
 
-  <!-- navbar -->
-  <div id="header-top">
-    <nav class="navbar navbar-expand-sm bg-light">
-      <div class="container">
-        <ul class="navbar-nav ms-5">
-          <div class="nav-item">
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                English
-              </a>
-              <ul class="dropdown-menu shadow">
-                <div class="flag-box">
-                  <img class="flag"
-                    src="./image/en.png"
-                    alt="" />
-                  <a class="dropdown-item" href="#">French</a>
-                </div>
-                <div class="flag-box">
-                  <img class="flag"
-                    src="./image/de.png"
-                    alt="" />
-                  <a class="dropdown-item" href="#">German</a>
-                </div>
-                <div class="flag-box">
-                  <img class="flag"
-                    src="./image/ja.png"
-                    alt="" />
-                  <a class="dropdown-item" href="#">Japanese</a>
-                </div>
-              </ul>
-            </div>
-
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                USD
-              </a>
-              <ul class="dropdown-menu shadow">
-                <li><a class="dropdown-item" href="#">USD - US Dolar</a></li>
-                <li><a class="dropdown-item" href="#">EUR - Euro</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">GBP - British Pound</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">INP - Indian Rupee</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </ul>
-      </div>
-
-      <div class="container">
-        <ul class="navbar-nav ms-5">
-          <li class="nav-item">
-            <a class="nav-link" style="color: #b1d1c9; cursor: auto;" href="#">
-              Welcome to Handmade Shop
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">|</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">My account</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">|</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Wishlist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">|</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">|</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login">Login</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="header header-left">
-          <div class="header_left-text">
-            <p class="text-top">Follow us</p>
-            <p class="text-bot">SOCIALS</p>
-          </div>
-
-          <div class="social">
-            <a href="#"><i class="fab fa-twitter icon"></i></a>
-            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
-            <a href="#"><i class="fab fa-instagram icon"></i></a>
-            <a href="#"><i class="fab fa-google icon"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="header header-center">
-          <a href="/">
-            <img src="./image/logo-02.png" alt="logo Handmade"
-              class="logo_handmade" />
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="header header-right">
-          <i class="fa fa-phone"></i>
-          <span>+(102) 3456 789</span>
-          <div class="cart">
-            <i class="fas fa-shopping-cart icon"></i>
-            <span class="badge bg-black align-top">0</span>
-            <span>$0.00</span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
   </div>
 
-  <!-- offcanvas responsive -->
-  <div class="offcanvas offcanvas-start text-bg-dark" id="canvas">
-    <div class="offcanvas-body">
-      <form class="form-inline d-flex">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <i class="fas fa-search"></i> </button>
-      </form>
-
-      <ul class="categories">
-        <li type="button" data-bs-toggle="collapse" class="categories-title" data-bs-target="#home">
-          HOME <i class="fa fas-search"></i></li>
-        <div id="home" class="collapse">
-          <ul class="collapse-content">
-            <li type="button" class="categories-responsive">Home 01</li>
-            <li type="button" class="categories-responsive">Home 02</li>
-            <li type="button" class="categories-responsive">Home 03</li>
-            <li type="button" class="categories-responsive">Home 04</li>
-            <li type="button" class="categories-responsive">Home 05</li>
-            <li type="button" class="categories-responsive">Home 06</li>
-            <li type="button" class="categories-responsive">Home 07</li>
-            <li type="button" class="categories-responsive">Home 08</li>
-          </ul>
-        </div>
-        <li type="button" data-bs-toggle="collapse" class="categories-title" data-bs-target="#pages">PAGES</li>
-        <div id="pages" class="collapse">
-          <ul class="collapse-content">
-            <li type="button" class="categories-responsive">Contact 01</li>
-            <li type="button" class="categories-responsive">Contact 02</li>
-            <li type="button" class="categories-responsive">About Us</li>
-            <li type="button" class="categories-responsive">About Me</li>
-            <li type="button" class="categories-responsive">About Team</li>
-            <li type="button" class="categories-responsive">F.A.Q</li>
-            <li type="button" class="categories-responsive">Services</li>
-            <li type="button" class="categories-responsive">404 Error</li>
-            <li type="button" class="categories-responsive">Comming Soon</li>
-            <li type="button" class="categories-responsive">Under Construction</li>
-          </ul>
-        </div>
-        <li type="button" data-bs-toggle="collapse" class="categories-title" data-bs-target="#blog">BLOG</li>
-        <div id="blog" class="collapse">
-          <ul class="collapse-content">
-            <li type="button" class="categories-responsive">Large Image Layout</li>
-            <li type="button" class="categories-responsive">Medium Image Layout</li>
-            <li type="button" class="categories-responsive">Grid Layout</li>
-            <li type="button" class="categories-responsive">Masonry Layout</li>
-            <li type="button" class="categories-responsive">Single Post</li>
-
-          </ul>
-        </div>
-        <li type="button" data-bs-toggle="collapse" class="categories-title" data-bs-target="#project">PROJECT</li>
-        <div id="project" class="collapse">
-          <ul class="collapse-content">
-            <li type="button" class="categories-responsive">Grid Layout</li>
-            <li type="button" class="categories-responsive">Masonry Layout</li>
-            <li type="button" class="categories-responsive">Single Portfolio</li>
-
-          </ul>
-        </div>
-        <li type="button" data-bs-toggle="collapse" class="categories-title" data-bs-target="#feature">FEATURE</li>
-        <div id="feature" class="collapse">
-          <ul class="collapse-content">
-            <li type="button" class="categories-responsive">ShortCodes</li>
-            <li type="button" class="categories-responsive">ShortCodes</li>
-            <li type="button" class="categories-responsive">Our Features</li>
-            <li type="button" class="categories-responsive">Our Features</li>
-          </ul>
-        </div>
-        <li type="button" data-bs-toggle="collapse" class="categories-title" data-bs-target="#shop">SHOP</li>
-        <div id="shop" class="collapse">
-          <ul class="collapse-content">
-            <li type="button" class="categories-responsive">Tabs Product</li>
-
-          </ul>
-        </div>
-        <li type="button" data-bs-toggle="collapse" class="categories-title" data-bs-target="#newpost">NEW POSTS</li>
-        <div id="newpost" class="collapse">
-          <ul class="collapse-content">
-            <li type="button" class="categories-responsive">I Love My Life Very Much</li>
-            <li type="button" class="categories-responsive">Here are many variation Of Passages</li>
-            <li type="button" class="categories-responsive">Inteligent Transitions In Ux Design</li>
-            <li type="button" class="categories-responsive">Standard Post Example</li>
-            <li type="button" class="categories-responsive">Image Post Example</li>
-          </ul>
-        </div>
-      </ul>
-
-    </div>
-  </div>
-  <!-- nav responsive -->
-  <nav class="navbar navbar-light bg-dark rs-nav">
-    <div class="container">
-      <button class="fa-solid fa-bars bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvas">
-      </button>
-      <div>
-        <button class="fa-sharp fa-solid fa-shop bg-dark"></button>
-        <button class="fa-solid fa-magnifying-glass bg-dark" data-bs-toggle="modal" data-bs-target="#myModal"
-          type="button">
-        </button>
-      </div>
-    </div>
-  </nav>
-  <!--  -->
+  
 
 
-  <!--  -->
-  <hr class="hr-first" />
-  <!--Body-->
-  <div class="container">
-    <nav class="navbar navbar-expand-sm">
-      <div class="container col-11">
-        <ul class="navbar-nav">
-          <div class="nav-item dropdown">
-            <button class="dropbtn" href="#">
-              HOMES
-              <i class="fa-solid fa-angle-down" style="font-size: x-small;"></i>
-            </button>
-            <div class="container">
-              <div class="dropdown-content">
-                <a href="#">Home 1</a>
-                <a href="#">Home 2</a>
-                <a href="#">Home 3</a>
-                <a href="#">Home 4</a>
-                <a href="#">Home 5</a>
-                <a href="#">Home 6</a>
-                <a href="#">Home 7</a>
-                <a href="#">Home 8</a>
-              </div>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <button class="dropbtn" href="#">
-              PAGES
-              <i class="fa-solid fa-angle-down" style="font-size: x-small;"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Contact 01</a>
-              <a href="#">Contact 02</a>
-              <a href="#">About us</a>
-              <a href="#">About me</a>
-              <a href="#">F.A.Q</a>
-              <a href="#">Service</a>
-              <a href="#">404 error</a>
-              <a href="#">Comming sooon</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <button class="dropbtn" href="#">
-              BLOGS
-              <i class="fa-solid fa-angle-down" style="font-size: x-small;"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Large Image Layout</a>
-              <a href="#">Medium Image Layout</a>
-              <a href="#">Grid Layout</a>
-              <a href="#">Masonry Layout</a>
-              <a href="#">Single Post</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <button class="dropbtn" href="#">
-              PROJECTS
-              <i class="fa-solid fa-angle-down" style="font-size: x-small;"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Grid Layout</a>
-              <a href="#">Masonry Layout</a>
-              <a href="#">Single Portfolio</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <button class="dropbtn" href="#">
-              FEATURES
-              <i class="fa-solid fa-angle-down" style="font-size: x-small;"></i>
-            </button>
-            <div class="dropdown-content full-screen-feature" style="width: 1296px;">
-              <!--  -->
-              <div class="row">
-                <div class="col-lg-3">
-                  <ul>
-                    <h3>ShortCodes</h3>
-                    <li><span> Banner</span></li>
-                    <li><span>Icon Boxes</span> </li>
-                    <li><span> Cover Boxes</span></li>
-                    <li><span>Message Boxes</span> </li>
-                    <li><span> Buttons</span></li>
-                    <li><span> Tabs & Tours</span></li>
-                    <li><span> Accordions & Toggles</span></li>
-                    <li><span> Testimonial</span></li>
-                  </ul>
-                </div>
-                <div class="col-lg-3">
-                  <ul>
-                    <h3>ShortCodes</h3>
-                    <li><span>Titles</span></li>
-                    <li><span>Blog Post</span> </li>
-                    <li><span>Google Maps</span></li>
-                    <li><span>Pie chart & Couter</span> </li>
-                    <li><span>Progess Bar</span></li>
-                    <li><span>Call To Action</span></li>
-                    <li><span>Image Slider</span></li>
-                    <li><span>Product</span></li>
-                  </ul>
-                </div>
-                <div class="col-lg-3">
-                  <ul>
-                    <h3>Our Features</h3>
-                    <li><span> Bootstrap3 Grid System</span></li>
-                    <li><span>VC Pages Builder</span> </li>
-                    <li><span> Cover Boxes</span></li>
-                    <li><span>Message Boxes</span> </li>
-                    <li><span> Buttons</span></li>
-                    <li><span> Tabs & Tours</span></li>
-                    <li><span> Accordions & Toggles</span></li>
-                    <li><span> Testimonial</span></li>
-                  </ul>
-                </div>
-                <div class="col-lg-3">
-                  <ul>
-                    <h3>Our Features</h3>
-                    <li><span> Banner</span></li>
-                    <li><span>Icon Boxes</span> </li>
-                    <li><span> Cover Boxes</span></li>
-                    <li><span>Message Boxes</span> </li>
-                    <li><span> Buttons</span></li>
-                    <li><span> Tabs & Tours</span></li>
-                    <li><span> Accordions & Toggles</span></li>
-                    <li><span> Testimonial</span></li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="nav-item dropdown">
-            <button class="dropbtn" href="#">
-              SHOP
-              <i class="fa-solid fa-angle-down" style="font-size: x-small;"></i>
-            </button>
-            <div class="dropdown-content">
-              <div class="dropdown-content full-screen-shop" style="width: 1296px;">
-                <!--  -->
-                <div class="row">
-                  <div class="col-lg-3">
-                    <ul>
-                      <h3>ShortCodes</h3>
-                      <li><span> Banner</span></li>
-                      <li><span>Icon Boxes</span> </li>
-                      <li><span> Cover Boxes</span></li>
-                      <li><span>Message Boxes</span> </li>
-                      <li><span> Buttons</span></li>
-                      <li><span> Tabs & Tours</span></li>
-                      <li><span> Accordions & Toggles</span></li>
-                      <li><span> Testimonial</span></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-3">
-                    <ul>
-                      <h3>ShortCodes</h3>
-                      <li><span>Titles</span></li>
-                      <li><span>Blog Post</span> </li>
-                      <li><span>Google Maps</span></li>
-                      <li><span>Pie chart & Couter</span> </li>
-                      <li><span>Progess Bar</span></li>
-                      <li><span>Call To Action</span></li>
-                      <li><span>Image Slider</span></li>
-                      <li><span>Product</span></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-3">
-                    <ul>
-                      <h3>Our Features</h3>
-                      <li><span> Bootstrap3 Grid System</span></li>
-                      <li><span>VC Pages Builder</span> </li>
-                      <li><span> Cover Boxes</span></li>
-                      <li><span>Message Boxes</span> </li>
-                      <li><span> Buttons</span></li>
-                      <li><span> Tabs & Tours</span></li>
-                      <li><span> Accordions & Toggles</span></li>
-                      <li><span> Testimonial</span></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-3">
-                    <ul>
-                      <h3>Our Features</h3>
-                      <li><span> Banner</span></li>
-                      <li><span>Icon Boxes</span> </li>
-                      <li><span> Cover Boxes</span></li>
-                      <li><span>Message Boxes</span> </li>
-                      <li><span> Buttons</span></li>
-                      <li><span> Tabs & Tours</span></li>
-                      <li><span> Accordions & Toggles</span></li>
-                      <li><span> Testimonial</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="nav-item dropdown">
-            <button class="dropbtn" href="#">
-              NEW POST
-              <i class="fa-solid fa-angle-down" style="font-size: x-small;"></i>
-            </button>
-            <div class="dropdown-content">
-              <div class="dropdown-content full-screen-post" style="width: 1296px;">
-                <!--  -->
-                <div class="row">
-                  <div class="col-lg-3">
-                    <ul>
-                      <h3>ShortCodes</h3>
-                      <li><span> Banner</span></li>
-                      <li><span>Icon Boxes</span> </li>
-                      <li><span> Cover Boxes</span></li>
-                      <li><span>Message Boxes</span> </li>
-                      <li><span> Buttons</span></li>
-                      <li><span> Tabs & Tours</span></li>
-                      <li><span> Accordions & Toggles</span></li>
-                      <li><span> Testimonial</span></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-3">
-                    <ul>
-                      <h3>ShortCodes</h3>
-                      <li><span>Titles</span></li>
-                      <li><span>Blog Post</span> </li>
-                      <li><span>Google Maps</span></li>
-                      <li><span>Pie chart & Couter</span> </li>
-                      <li><span>Progess Bar</span></li>
-                      <li><span>Call To Action</span></li>
-                      <li><span>Image Slider</span></li>
-                      <li><span>Product</span></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-3">
-                    <ul>
-                      <h3>Our Features</h3>
-                      <li><span> Bootstrap3 Grid System</span></li>
-                      <li><span>VC Pages Builder</span> </li>
-                      <li><span> Cover Boxes</span></li>
-                      <li><span>Message Boxes</span> </li>
-                      <li><span> Buttons</span></li>
-                      <li><span> Tabs & Tours</span></li>
-                      <li><span> Accordions & Toggles</span></li>
-                      <li><span> Testimonial</span></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-3">
-                    <ul>
-                      <h3>Our Features</h3>
-                      <li><span> Banner</span></li>
-                      <li><span>Icon Boxes</span> </li>
-                      <li><span> Cover Boxes</span></li>
-                      <li><span>Message Boxes</span> </li>
-                      <li><span> Buttons</span></li>
-                      <li><span> Tabs & Tours</span></li>
-                      <li><span> Accordions & Toggles</span></li>
-                      <li><span> Testimonial</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-      </div>
-      </ul>
-
-      <div class="container col-1">
-        <!-- icon search -->
-        <div class="search icon-search-nav">
-          <i class="fas fa-search" data-bs-toggle="modal" data-bs-target="#myModal" type="button"></i>
-        </div>
-        <!--  -->
-        <div class="modal" id="myModal">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">ENTER YOUR KEYWORD</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <div class="input-group rounded">
-                  <input type="search" style="max-width: 200px;" class="form-control rounded" placeholder="Search"
-                    aria-label="Search" aria-describedby="search-addon" />
-                </div>
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <span class="input-group-text border-0" id="search-addon">
-                  <i type="button" class="fas fa-search"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--  -->
-      </div>
-  </div>
-  </nav>
-  <hr class="new1" />
-  </div>
-  <!--  -->
-
-  <!-- product item -->
+  <!-- header -->
+  <%- include('header.ejs') %>
+  
+  <!-- body -->
 
   <div class="product-item-inner">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <div class="overley-banner">
-            <a href="#" class="link-banner">
-              <img src="./image/banner-home-2.jpg" alt="" />
-            </a>
-            <div class="overley-box">
-              <div class="overley-box-child">
-                <p class="overley-text">
-                  How to decorate a birthday gift box
-                </p>
-                <a href="#" class="overley-link">View more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="product-categories-home">
-            <ul>
-              <li class="categories-item">Uncategories (0)</li>
-              <li class="categories-item">Special Goods (0)</li>
-              <li class="categories-item">Romatic (0)</li>
-              <li class="categories-item">Personal (0)</li>
-              <li class="categories-item">Love (0)</li>
-              <li class="categories-item">Jewelry (0)</li>
-              <li class="categories-item">Ilumination (0)</li>
-              <li class="categories-item">Greeting Cards (0)</li>
-              <li class="categories-item">Every Day (0)</li>
-              <li class="categories-item">Birthday Gifts (0)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <!-- card-lmr -->
       <div class="row card-lmr">
         <div class="col-md-4 col-lg-4">
@@ -667,39 +107,11 @@
                       <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
                     </span>
                     <span class="border border-product">
-                      <i data-bs-toggle="tooltip"  title="Wishlist" class="fas fa-heart wish-list"></i>
+                      <i data-bs-toggle="tooltip"  title="Wishlist" class="fas fa-heart"></i>
                     </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search search"></i>
-                    </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart shopping"></i>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="card-product-content">
-                  <a href="product-detail" class="card-title card-product-title">
-                    Birthday Grouped
-                  </a>
-                  <p class="card-text card-product-text">$100.00</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6 col-6">
-              <div class="card card-product">
-                <div class="card-product-image">
-                  <a href="product-detail"> <img src="./image/product-18.jpg"
-                    class="card-img-top" alt="Product" /></a>
-                  <div class="card-body card-body-product">
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
-                    </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
-                    </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search"></i>
+                    <span class="border border-product"> <a href="product-detail">
+                      <i data-bs-toggle="tooltip" title="Quick View" class="fas fa-eye"></i>
+                    </a>
                     </span>
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
@@ -718,7 +130,38 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <a href="product-detail"> <a href="product-detail"> <img src="./image/product-18.jpg"
+                  <a href="product-detail"> <img src="./image/product-04-300x300.jpg"
+                    class="card-img-top" alt="Product" /></a>
+                  <div class="card-body card-body-product">
+                    <span class="border border-product">
+                      <i data-bs-toggle="tooltip" title="Compare" class="fas fa-exchange-alt"></i>
+                    </span>
+                    <span class="border border-product">
+                      <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
+                    </span>
+                    <span class="border border-product"> <a href="product-detail">
+                      
+                    </a>
+                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-eye"></i>
+                    </span>
+                    <span class="border border-product">
+                      <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card-product-content">
+                  <a href="product-detail" class="card-title card-product-title">
+                    Birthday Grouped
+                  </a>
+                  <p class="card-text card-product-text">$100.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6 col-6">
+              <div class="card card-product">
+                <div class="card-product-image">
+                  <a href="product-detail"> <a href="product-detail"> <img src="./image/product-06-300x300.jpg"
                     class="card-img-top" alt="Product" /></a></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
@@ -727,8 +170,10 @@
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
                     </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search"></i>
+                    <span class="border border-product"> <a href="product-detail">
+                      
+                    </a>
+                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-eye"></i>
                     </span>
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
@@ -747,7 +192,7 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                  <a href="product-detail"> <img src="./image/product-08-300x300.jpg"
                     class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
@@ -756,8 +201,10 @@
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
                     </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search"></i>
+                    <span class="border border-product"> <a href="product-detail">
+                      
+                    </a>
+                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-eye"></i>
                     </span>
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
@@ -781,7 +228,7 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                  <a href="product-detail"> <img src="./image/product-12-300x300.jpg"
                     class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
@@ -790,8 +237,10 @@
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
                     </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search"></i>
+                    <span class="border border-product"> <a href="product-detail">
+                      
+                    </a>
+                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-eye"></i>
                     </span>
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
@@ -810,7 +259,7 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                  <a href="product-detail"> <img src="./image/product-12-300x300.jpg"
                     class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
@@ -819,8 +268,10 @@
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
                     </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search"></i>
+                    <span class="border border-product"> <a href="product-detail">
+                      
+                    </a>
+                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-eye"></i>
                     </span>
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
@@ -839,7 +290,7 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                  <a href="product-detail"> <img src="./image/product-14-300x300.jpg"
                     class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
@@ -848,8 +299,10 @@
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
                     </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search"></i>
+                    <span class="border border-product"> <a href="product-detail">
+                      
+                    </a>
+                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-eye"></i>
                     </span>
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
@@ -868,7 +321,7 @@
             <div class="col-lg-3 col-sm-6 col-md-6 col-6">
               <div class="card card-product">
                 <div class="card-product-image">
-                  <a href="product-detail"> <img src="./image/product-18.jpg"
+                  <a href="product-detail"> <img src="./image/product-14-300x300.jpg"
                     class="card-img-top" alt="Product" /></a>
                   <div class="card-body card-body-product">
                     <span class="border border-product">
@@ -877,8 +330,10 @@
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="Wishlist" class="fas fa-heart"></i>
                     </span>
-                    <span class="border border-product">
-                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-search"></i>
+                    <span class="border border-product"> <a href="product-detail">
+                      
+                    </a>
+                      <i data-bs-toggle="tooltip" title="Quick view" class="fas fa-eye"></i>
                     </span>
                     <span class="border border-product">
                       <i data-bs-toggle="tooltip" title="View products" class="fas fa-shopping-cart"></i>
@@ -896,6 +351,19 @@
             </div>
           </div>
         </div>
+
+        <!-- pagination -->
+        <nav aria-label="page navigation">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      <!--  -->
+        
       </div>
 
       <div class="image-body">
@@ -1257,58 +725,7 @@
 
   <!-- footer  -->
   <hr />
-  <div class="bottom-bar-inner">
-    <div class="container">
-      <div class="row hello">
-        <div class="col-md-6 sidebar text-left">
-          <aside id="text-3" class="copyright margin-top-10 widget widget_text">
-            <div class="textwidget">
-              <div><span>© Copyright 2015. Powered by WordPress.</span></div>
-              <div><span>Theme made by G5Theme</span></div>
-            </div>
-          </aside>
-        </div>
-        <div class="col-md-6 sidebar text-right">
-          <aside id="handmade-payment-gate-2" class="widget widget-payment-gate">
-            <ul class="payment-gate">
-              <li class="any-payment">
-                <a target="_blank" href="http://www.mastercard.com" title="Master card">
-                  <img src="./image/master_card.jpg"
-                    alt="Master card" />
-                </a>
-              </li>
-              <li class="any-payment">
-                <a target="_blank" href="http://www.visa.com" title="Visa">
-                  <img src="./image/visa.jpg" alt="Visa" />
-                </a>
-              </li>
-              <li class="any-payment">
-                <a target="_blank" href="https://www.paypal.com" title="Paypal">
-                  <img src="./image/paypal.jpg" alt="Paypal" />
-                </a>
-              </li>
-              <li class="any-payment">
-                <a target="_blank" href="https://www.americanexpress.com/" title="American Express">
-                  <img src="./image/american_express.jpg"
-                    alt="American Express" />
-                </a>
-              </li>
-              <li class="any-payment">
-                <a target="_blank" href="https://www.westernunion.com" title="Weston Union">
-                  <img src="./image/weston_union.jpg"
-                    alt="Weston Union" />
-                </a>
-              </li>
-            </ul>
-          </aside>
-          <div class="box-scroll-to-top" onclick="scrollWin(0,-100000)">
-            <i class="fa-solid fa-up-long" ></i>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+  <%- include('footer.ejs') %>
 </body>
 
 <script>
@@ -1341,12 +758,31 @@
 <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="/js/script.js"></script>
+  <script src="/js/api.js"></script>
   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-
+  
   <script>
-    const wish = document.getElementsByClassName("dropdown-item")
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "100569799202511");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
 
-  console.log(wish.length())
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v15.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
 <!--  -->
 
